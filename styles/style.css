@@ -1,0 +1,164 @@
+/* Colors */
+/*linear-gradient(19deg, #21D4FD 0%, #08009b 100%); */
+/* General settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#399b43, #7bcd3b);
+  font-family: Hack, monospace;
+}
+
+main {
+  background: linear-gradient(315deg, #333 0%, #414141 74%);
+  width: 99%;
+  margin: 1rem auto;
+  
+}
+
+/* Header */
+header {
+  background: #333;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin: 0rem 2rem 0rem 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+header nav ul li a::before {
+  content: attr(data-item);
+  transition: 0.5s;
+  color: #FFE53B;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+header nav ul li a:hover::before {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav ul li a img {
+  width: 10rem;
+}
+
+/*searchpage*/
+.searchpage {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  outline: 0;
+  background: rgba(255,255,255,0.9) !important;
+}
+
+.searchpage form {
+  position: relative;
+  top: 12rem;
+  left: 2em;
+  max-width: 90%;
+}
+
+.searchpage form input {
+  border: 0;
+  border-bottom: 0.05em solid #ccc;
+  border-radius: 0;
+  background: none;
+  min-width: 100%;
+  box-shadow: none;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #333;
+  padding: 0 0.4em;
+  width: 100%;
+  outline: none;
+  line-height: 1.5em;
+}
+
+.searching {
+  background: url(../images/search.png) no-repeat center transparent;
+  background-size: auto;
+  border: none;
+  width: 3em;
+  height: 3em;
+  background-size: 3em;
+  position: relative;
+  top: 15.5rem;
+  margin-left: 90%;
+  filter: invert(40%) sepia(0%) saturate(6%) hue-rotate(220deg) brightness(102%) contrast(94%);
+}
+
+.close {
+  font-size: 2em;
+  line-height: 1em;
+  background-color: #4b4b4b;
+  color: #fff;
+  border-radius: 100%;
+  width: 1.25em;
+  height: 1.25em;
+  position: fixed;
+  right: 3%;
+  top: 4%;
+}
+
+.search {
+  background: none;
+  border: none;
+}
+
+/*main css*/
+main, footer {
+  width: 98%;
+  margin: auto;
+}
+
+.Pokemonstats {
+  color: #fff !important;
+  justify-content: center;
+  display: grid;
+}
+
+.Pokemonstats h1, .Pokemonstats h2 {
+  margin: auto;
+  text-align: center;
+}
+
+.cards {
+  padding-bottom: 1rem !important;
+  background-color: #4b4b4b;
+  margin-bottom: 1rem !important;
+}
+/*dropdown*//*# sourceMappingURL=style.css.map */
