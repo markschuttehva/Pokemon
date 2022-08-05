@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <!-- Bootstrap -->
 </head>
-<body>
+<body onload="randomPokemon()">
     <!-- Menu -->
     <!-- Zoekbalk -->
     <header>
@@ -22,7 +22,7 @@
                 <ul class="navbar-nav">
                     <li class="nav item active"><a href="#" class="nav-link active fs-3 fw-bold">Start</a></li>
                     <li class="nav item active"><a href="#" class="nav-link fs-3 fw-bold">Team</a></li>
-                    <li class="nav item active"><a href="#" class="nav-link fs-3 fw-bold">Pokemon of the week</a></li>
+                    <li class="nav item active"><a href="#" class="nav-link fs-3 fw-bold">Random pokemon</a></li>
                     <li class="nav item active col-md-1 col-xs-1"><button class="search"><img src="images/search.png" alt="search" class="col-md-6 col-xd-6"></button></li>
                 </ul>
             </section>
@@ -82,7 +82,7 @@
         </section>
         <section class="cards bg-dark">
             <!-- 10 pokemon cards -->
-            <section class="row bg">
+            <section class="row parent">
                 <section class="Pokemonstats col">
                     <img src="https://serebii.net/swordshield/pokemon/001.png" alt="">
                     <h1>#001 Bulbasaur</h1>
@@ -103,8 +103,6 @@
                     <h1>#004 Charmander</h1>
                     <h2>Fire</h2>
                 </section>
-            </section>
-            <section class="row">
                 <section class="Pokemonstats col">
                     <img src="https://serebii.net/swordshield/pokemon/005.png" alt="">
                     <h1>#005 Charmeleon</h1>
@@ -125,8 +123,6 @@
                     <h1>#008 Wartortle</h1>
                     <h2>Water</h2>
                 </section>
-            </section>
-            <section class="row">
                 <section class="Pokemonstats col">
                     <img src="https://serebii.net/swordshield/pokemon/009.png" alt="">
                     <h1>#009 Blastoise</h1>
@@ -147,8 +143,6 @@
                     <h1>#012 Butterfree</h1>
                     <h2>Bug / Flying</h2>
                 </section>
-            </section>
-            <section class="row">
                 <section class="Pokemonstats col">
                     <img src="https://serebii.net/swordshield/pokemon/013.png" alt="">
                     <h1>#013 Weedle</h1>
@@ -175,6 +169,7 @@
     <footer class="navbar navbar-expand-md navbar-dark bg-dark">
     </footer>
 	  <script src="scripts/search.js"></script>
+      <script src="scripts/randomPokemon.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
