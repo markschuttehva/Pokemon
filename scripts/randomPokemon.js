@@ -9,5 +9,5 @@ function randomPokemon() {
     //console.log(everyPokemon);
 
     let pokemonInfo = document.querySelector(".parent :nth-child(" + rndNum + ")").innerHTML;
-    console.log(pokemonInfo);
+    //console.log(pokemonInfo);
 }

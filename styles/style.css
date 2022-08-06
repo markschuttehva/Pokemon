@@ -154,6 +154,13 @@ main, footer {
 .Pokemonstats h1, .Pokemonstats h2 {
   margin: auto;
   text-align: center;
+  display: ruby;
+  text-transform: uppercase;
+}
+
+.Pokemonstats img {
+  margin: auto;
+  width: 12em;
 }
 
 .cards {
