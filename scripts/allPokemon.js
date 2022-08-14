@@ -1,9 +1,10 @@
-const pokedex = document.getElementById("pokedex");
+export const pokedex = document.getElementById("pokedex");
+export const numberPokemons = 151;
+//console.log(pokedex);
 
-console.log(pokedex);
-
-const promises = [];
-for (let i = 1; i <= 150; i++) {
+export const promises = [];
+// <= 151 = the last pokemon in the pokedex
+for (let i = 1; i <= numberPokemons; i++) {
     const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
     //gets the data and converts it to json
     promises.push(fetch(url).then((res) => res.json()));
@@ -24,14 +25,14 @@ Promise.all(promises).then( results => {
         spdefence: data.stats[4].base_stat,
         speed: data.stats[5].base_stat,
         //adds multiple types to the type attribute
-        
         type: data.types.map((type) => type.type.name).join(' / ')
     }))
+    //console.log(pokemon[1].speed);
     displayPokemon(pokemon);
 })
 
-const displayPokemon = (pokemon) => {
-    console.log(pokemon);
+    //making html elements
+const displayPokemon = (pokemon) => {   
     const pokemonHTMLString = pokemon.map(pokeman => `
     <section class="Pokemonstats col">
     <img src="${pokeman.image}" alt="${pokeman.name}">
@@ -40,4 +41,4 @@ const displayPokemon = (pokemon) => {
     </section>
     `);
     pokedex.innerHTML = pokemonHTMLString;
-} 
+}

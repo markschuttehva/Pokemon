@@ -149,6 +149,7 @@ main, footer {
   color: #fff !important;
   justify-content: center;
   display: grid;
+  margin-bottom: 1rem;
 }
 
 .Pokemonstats h1, .Pokemonstats h2 {
@@ -156,11 +157,14 @@ main, footer {
   text-align: center;
   display: ruby;
   text-transform: uppercase;
+  font-size: 1.8rem;
 }
 
 .Pokemonstats img {
   margin: auto;
-  width: 12em;
+  width: 12rem;
+  border-style: solid;
+  border-color: white;
 }
 
 .cards {
